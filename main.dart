@@ -1,3 +1,4 @@
+import 'package:buyp_hello_world/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,52 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Welcome to buyp Team',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Welcome to Buyp Team'),
-        ),
-        body: Center(
-          child: Stack(
-            children: [
-              Container(
-                alignment: Alignment.center,
-                color: Colors.redAccent,
-                child: Container(
-                  alignment: Alignment.center,
-                  color: Colors.white,
-                  width: 400,
-                  height: 300,
-                  child: Column(
-                    children: [
-                      const Text("Login"),
-                      TextFormField(),
-                      const TextField(),
-                      Row(
-                        children: [
-                          TextButton(
-                              onPressed: null,
-                              child: Container(
-                                color: Colors.redAccent,
-                                child: const Text("Login"),
-                              )),
-                          TextButton(
-                              onPressed: null,
-                              child: Container(
-                                color: Colors.redAccent,
-                                child: const Text("Cancel"),
-                              ))
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              )
-            ],
-          ),
-        ),
-      ),
-    );
+    return const MaterialApp(
+        title: 'Welcome to buyp Team', home: LoginWidget());
   }
 }
